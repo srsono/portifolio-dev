@@ -12,8 +12,8 @@
     <header>
         <h1>portifolio inicial Joabi</h1>
 
-        <nav> <!--menu de navegação-->
-            <ul> <!--lista não ordenada de links navegção-->
+        <nav> <!--menu de navegacao-->
+            <ul> <!--lista nao ordenada de links navegcao-->
                 <li>Sobre mim</li>
                 <li>Projetos</li>
                 <li>Contato</li>
@@ -22,14 +22,14 @@
     </header>
     <section>
         <H2>Sobre mim</H2>
-        <img src="imagens/Captura de tela de 2026-07-06 03-19-16.png" width="900" height="500"
-            alt="talvez essa imagen não esteja mais disponivel no site">
+        <img src="imagens/sportlife.jpeg" width="900" height="900"
+            alt="talvez essa imagen nao esteja mais disponivel no site">
         <article>
             <p>Olá! Meu nome é <strong>Joabi</strong>, tenho 22 anos e sou natural de Macapá, capital do Amapá.</p>
 
             <p>Sou um <strong>estudante autodidata de desenvolvimento de software</strong>, Há quase um ano</p>
             <p>A paixão por tecnologiae e curiosidade por entender como as coisas realmente funcionam,
-                eu acredito que posso transformar minha
+                Eu acredito que posso transformar minha
                 realidade através do conhecimento.</p>
 
             <p>Acredito que a programação vai além de códigos é uma ferramenta poderosa para criar soluções e abrir
@@ -70,13 +70,34 @@
     </section>
 
     <footer>
-        <p>direitos autorais joabi</p>
+
         <section>
+
             <h3>contatos</h3>
+
+            <p>tem um projeto em mente, você pode me enviar um email ou ligar para meu número profissional.</p>
+
             <ul>
-                <li>email</li>
-                <li>numero</li>
+                <li><a href="mailto:seuemail@example.com">Email</a></li>
+                <li><a href="tel:+551112345678">Número de telefone</a></li>
             </ul>
+
+            <p>tem alguma sugestão? deixe seu feedback. Ajudeme  a melhorar sua experiência!</p>
+
+            <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="8" required></textarea>
+
+            <form action="" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Enviar</button>
+                <p>&copy; 2026 direitos autorais joabi</p>
+            </form>
+
         </section>
     </footer>
 </body>
