@@ -1,0 +1,155 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ 
+    /* === CORES PRINCIPAIS === */
+    --cor-primaria:#BF0413 ;
+    --cor-primaria-escura: #A60303;
+    --cor-primaria-clara: #F27329;
+    --cor-primaria-clara-2: #F24F13;
+    --cor-primaria-clara-3: #F2360C;
+
+       /* === CORES NEUTRAS === */
+    --cor-fundo: #f0f2f5;          /* Fundo da página */
+    --cor-branca: #ffffff;         /* Branco puro */
+    --cor-cinza-claro: #f8f9fa;    /* Cinza bem claro */
+    --cor-cinza-medio: #e2e3e3;    /* Cinza médio */
+    --cor-cinza-escuro: #495057;   /* Cinza escuro */
+    --cor-texto: #333333;          /* Cor do texto principal */
+    --cor-texto-claro: #666666;    /* Cor do texto secundário */
+
+    /* === CORES DE SOMBRA === */
+    --sombra-padrao: 0 5px 20px rgba(48, 47, 47, 0.742);
+    --sombra-forte: 0 10px 30px rgba(10, 10, 10, 0.916);
+    --sombra-hover: 0 4px 15px rgba(102, 126, 234, 0.3);
+
+    /* === CORES DE GRADIENTE === */
+    --gradiente-primario: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-clara) 100%);
+    --gradiente-hover: linear-gradient(135deg, var(--cor-primaria-escura) 0%, var(--cor-branca) 100%);
+    --gradiente-tabela: linear-gradient(135deg, var(--cor-primaria-clara-3) 0%, var(--cor-primaria-clara) 90%);
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-branca);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-clara));
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(100, 100, 100, 0.3);
+}
+
+main{
+    padding: 50px;
+    background-color: var(--cor-primaria-clara-3);
+    border-radius: 10px;
+    box-shadow: var(--sombra-padrao);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding: 7px 7px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background: rgba(131, 127, 127, 0.193);
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background: var(--gradiente-hover);
+    color: var(--branco);
+}
+section{
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+section h2{
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section p{
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: var(--cor-texto-claro);
+}
+
+section img{
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 0px 10px var(--cor-cinza-escuro);
+    margin-bottom: 5px;
+}
+
+.tabela-habilidades{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: var(--cor-cinza-medio) 0px 1px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabela-habilidades thead{
+   background: var(--gradiente-tabela);
+   color: var(--cor-branca);
+}
+
+.tabela-habilidades th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.tabela-habilidades td {
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--cor-cinza-medio);
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.tabela-habilidades tbody tr:hover {
+    background-color: var(--cor-cinza-medio);
+    transform:scale(1.01);
+    transition: all 0.3s ease;
+}
+
+

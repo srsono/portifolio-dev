@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz do Usuário</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Selecione as tecnologias que você conhece:</legend>
+
+        <div id="opcoes">
+
+            <label for="html">
+                <input type="checkbox" id="html" name="skills[]" value="HTML">
+                HTML</label>
+
+            <label for="css">
+                <input type="checkbox" id="css" name="skills[]" value="CSS">
+                CSS</label>
+
+            <label for="javascript">
+                <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+                JavaScript</label>
+
+            <label for="python">
+                <input type="checkbox" id="python" name="skills[]" value="Python">
+                Python</label>
+
+            <label for="linux">
+                <input type="checkbox" id="linux" name="skills[]" value="Linux">
+                Linux</label>
+        </div>
+
+        <button type="button" id="verResultado">Enviar resultado</button>
+        <div id="resultado" style="display:none;"></div>
+    </fieldset>
+</body>
+
+</html>
