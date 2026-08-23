@@ -1,41 +1,37 @@
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root{ 
-    /* === CORES PRINCIPAIS === */
-    --cor-primaria:#BF0413 ;
-    --cor-primaria-escura: #A60303;
-    --cor-primaria-clara: #F27329;
-    --cor-primaria-clara-2: #F24F13;
-    --cor-primaria-clara-3: #F2360C;
-
-       /* === CORES NEUTRAS === */
-    --cor-fundo: #f0f2f5;          /* Fundo da página */
-    --cor-branca: #ffffff;         /* Branco puro */
-    --cor-cinza-claro: #f8f9fa;    /* Cinza bem claro */
-    --cor-cinza-medio: #e2e3e3;    /* Cinza médio */
-    --cor-cinza-escuro: #495057;   /* Cinza escuro */
-    --cor-texto: #333333;          /* Cor do texto principal */
-    --cor-texto-claro: #666666;    /* Cor do texto secundário */
-
-    /* === CORES DE SOMBRA === */
-    --sombra-padrao: 0 5px 20px rgba(48, 47, 47, 0.742);
-    --sombra-forte: 0 10px 30px rgba(10, 10, 10, 0.916);
-    --sombra-hover: 0 4px 15px rgba(102, 126, 234, 0.3);
-
-    /* === CORES DE GRADIENTE === */
-    --gradiente-primario: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-clara) 100%);
-    --gradiente-hover: linear-gradient(135deg, var(--cor-primaria-escura) 0%, var(--cor-branca) 100%);
-    --gradiente-tabela: linear-gradient(135deg, var(--cor-primaria-clara-3) 0%, var(--cor-primaria-clara) 90%);
+       /* CORES PRINCIPAIS */
+    --cor-primaria: #1a1a2e;         /* Fundo escuro */
+    --cor-secundaria: #16213e;        /* Azul escuro */
+    --cor-destaque: #e94560;          /* Vermelho para destaque */
+    --cor-roxo: #6c3cb0;              /* Roxo */
+    
+    /* CORES DE FUNDO */
+    --cor-fundo: #f8f9fa;             /* Fundo claro */
+    --cor-fundo-escuro: #1a1a2e;      /* Fundo escuro */
+    
+    /* CORES DE TEXTO */
+    --cor-texto: #2d3436;             /* Texto principal */
+    --cor-texto-claro: #636e72;       /* Texto secundário */
+    --cor-branca: #ffffff;            /* Branco */
+    
+    /* SOMBRAS */
+    --sombra-padrao: 0 4px 6px rgba(0,0,0,0.1);
+    --sombra-forte: 0 10px 30px rgba(0,0,0,0.2);
+    
+    /* GRADIENTES */
+    --gradiente-primario: linear-gradient(135deg, #1a1a2e, #6c3cb0);
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-color: var(--cor-branca);
     color: var(--cor-texto);
     line-height: 1.6;
@@ -45,7 +41,7 @@ body{
 }
 
 header{
-    background: linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-clara));
+    background-color:  var(--cor-primaria);
     text-align: center;
     margin-bottom: 20px;
     text-align: center;
@@ -54,102 +50,155 @@ header{
 
 main{
     padding: 50px;
-    background-color: var(--cor-primaria-clara-3);
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: var(--sombra-padrao);
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline-block;
-    font-size: 1.3em;
+h1, h2, h3 {
     font-weight: 300;
-    padding: 7px 7px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background: rgba(131, 127, 127, 0.193);
-    cursor: pointer;
+    letter-spacing: -0.5px;
 }
 
-nav ul li:hover {
-    background: var(--gradiente-hover);
-    color: var(--branco);
+h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
+
+h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: var(--cor-texto);
+    font-size: 18px;
+    max-width: 800px;
+}
+
+.container-principal{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: var(--cor-fundo);
+}
+
+.container-principal-overlay{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+
+.container h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
 section{
     margin-bottom: 30px;
     padding: 30px;
-    background-color: var(--branco);
+    background-color: var(--cor-branca);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 section h2{
-    color: var(--secondary-color);
+    color: var(--cor-secundaria);
     margin-bottom: 15px;
     padding-bottom: 20px;
-    border-bottom: 3px solid var(--primary-color);
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-section p{
-    font-size: 1.1em;
-    margin-bottom: 15px;
-    color: var(--cor-texto-claro);
+section img{
+    width:  150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--cor-primaria);
+    box-shadow:
+     - 3px 3px 10px rgba(0,0,0,0.15),
+     - 8px 8px 25px rgba(0,0,0,0.08);
+     display: block;
+     margin: 0 auto 20px;
+     transition: all 0.4s ease;
 }
 
-section img{
-    max-width: 100%;
-    width: 20%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 2px 0px 10px var(--cor-cinza-escuro);
-    margin-bottom: 5px;
+section img:hover{
+    transform: scale(1.05);
+    box-shadow:
+    - 5px 5px 20px rgba(108, 60, 176, 0.3),
+    - 10px 10px 40px rgba(108, 60, 176, 0.15);
 }
 
 .tabela-habilidades{
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: var(--cor-cinza-medio) 0px 1px 10px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    box-shadow: var(--sombra-padrao);
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .tabela-habilidades thead{
-   background: var(--gradiente-tabela);
+   background: var(--gradiente-primario);
    color: var(--cor-branca);
 }
 
 .tabela-habilidades th {
-    padding: 12px 15px;
+    padding: 15px 20px;
     text-align: left;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-size: 14px;
 }
 
 .tabela-habilidades td {
-    padding: 9px 10px;
+    padding: 15px 20px;
     border-bottom: 1px solid var(--cor-cinza-medio);
     font-size: 15px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tabela-habilidades tbody tr:hover {
     background-color: var(--cor-cinza-medio);
     transform:scale(1.01);
-    transition: all 0.3s ease;
 }
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
 
 

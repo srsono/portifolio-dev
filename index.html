@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>projeto001 SCthec</title>
+    <title>projeto portfólio</title>
 </head>
 
-<main>
-
-    <body>
-        <header>
-            <nav> <!--menu de navegacao-->
-                <ul> <!--lista nao ordenada de links navegcao-->
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#links">Projetos</a></li>
-                    <li><a href="#contatos">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2 id="sobre-mim">Sobre mim</h2>
-                <img src="imagens/perfilfoto.png" alt="Uma exposição de arte com quadros" />
+<body>
+    <header>
+        <nav class="glass-nav" id="glassnv"> <!--menu de navegacao-->
+            <ul> <!--lista nao ordenada de links navegcao-->
+                <li><a href="#sobre-mim">sobre mim</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-principal" id="container-principal"> <!-- seção principal -->
+            <h2 id="sobre-mim">Olá, este é o meu portfólio</h2>
+            <img id="perfil-foto" src="imagens/perfilfoto.png" alt="Uma exposição de arte com quadros" />
+            <div class="container-ptincipal-overlay">
                 <article>
                     <p>Olá! Meu nome é <strong>Joabi</strong></p>
 
@@ -46,37 +45,41 @@
                         pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean
                         sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
                 </article>
+            </div>
 
+            <section class="habilidades" id="habilidades"> <!-- seção de habilidades -->
                 <aside>
-                    <h3 id="habilidades">Habilidades</h3>
+                    <h3>Habilidades</h3>
                     <table class="tabela-habilidades">
                         <thead>
                             <tr>
-                                <th>Tecnologia</th>
-                                <th>Nível</th>
-                                <th>Descrição</th>
+                                <th data-label="Tecnologia">Tecnologia</th>
+                                <th data-label="Nível">Nível</th>
+                                <th data-label="Descrição">Descrição</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>HTML/CSS</td>
-                                <td>Intermediário</td>
-                                <td>Construção de páginas web responsivas</td>
+                                <td data-label="Tecnologia">HTML/CSS</td>
+                                <td data-label="Nível">Intermediário</td>
+                                <td data-label="Descrição">Construção de páginas web responsivas</td>
                             </tr>
                             <tr>
-                                <td>JavaScript</td>
-                                <td>Intermediário</td>
-                                <td>Desenvolvimento de funcionalidades dinâmicas</td>
+                                <td data-label="Tecnologia">JavaScript</td>
+                                <td data-label="Nível">Intermediário</td>
+                                <td data-label="Descrição">Desenvolvimento de funcionalidades dinâmicas</td>
                             </tr>
                             <tr>
-                                <td>Python</td>
-                                <td>Intermediário</td>
-                                <td>Desenvolvimento de aplicações e automação</td>
+                                <td data-label="Tecnologia">Python</td>
+                                <td data-label="Nível">Intermediário</td>
+                                <td data-label="Descrição">Desenvolvimento de aplicações e automação</td>
                             </tr>
                             <tr>
-                                <td>Linux</td>
-                                <td>Básico</td>
-                                <td>Manuseio do sistema operacional e ferramentas de linha de comando</td>
+                                <td data-label="Tecnologia">Linux</td>
+                                <td data-label="Nível">Básico</td>
+                                <td data-label="Descrição">Manuseio do sistema operacional e ferramentas de linha de
+                                    comando
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -101,41 +104,55 @@
                 <p> já conhece alguma das tecnologias que utilizo?</p>
                 <p><a href="quiz.html">Faça o quiz de conhecimento</a></p>
             </section>
-            <footer> <!-- rodapé com contatos e sugestão de ideias -->
 
-                <section>
+        </section>
 
-                    <h3 id="contatos">contatos</h3>
+        <section>
 
-                    <p>tem um projeto em mente, você pode me enviar um email ou ligar para meu número profissional.</p>
+            <h2 id="links">Projetos</h2>
+            <ul>
+                <li><a href="#">Projeto 1</a></li>
+                <li><a href="#">Projeto 2</a></li>
+                <li><a href="#">Projeto 3</a></li>
+            </ul>
 
-                    <ul>
-                        <li><a href="mailto:seuemail@example.com">Email</a></li>
-                        <li><a href="tel:+551112345678">Número de telefone</a></li>
-                    </ul>
+        </section>
 
-                    <p>tem alguma sugestão? deixe seu feedback. Ajudeme a melhorar sua experiência!</p>
+    </main>
 
-                    <form action="" method="post">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" cols="30" rows="8" required></textarea>
+    <footer> <!-- rodapé com contatos e sugestão de ideias -->
+        <section class="container-footer" id="container">
 
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+            <h3 id="contato">contato</h3>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+            <p>tem um projeto em mente, você pode me enviar um email ou ligar para meu número profissional.</p>
 
-                        <button type="submit">Enviar</button>
-                        <p>&copy; todos os direitos reservados</p>
-                    </form>
+            <ul>
+                <li><a href="mailto:seuemail@example.com">Email</a></li>
+                <li><a href="tel:+551112345678">Número de telefone</a></li>
+            </ul>
 
-                </section>
-        </main>
+            <p>tem alguma sugestão? deixe seu feedback. Ajudeme a melhorar sua experiência!</p>
 
-        </footer>
-    </body>
-</main>
+            <form action="" method="post">
+                <label for="mensagem">📱Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="8" required></textarea>
 
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">📧Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit" id="enviar">Enviar</button>
+                <p>&copy; todos os direitos reservados</p>
+            </form>
+
+        </section>
+
+
+    </footer>
+
+</body>
 
 </html>
