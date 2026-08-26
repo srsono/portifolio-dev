@@ -87,13 +87,7 @@ p{
     background-color: var(--cor-fundo);
 }
 
-.container-principal-overlay{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-branca);
-}
+
 
 .container-footer{
     max-width: 1200px;
