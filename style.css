@@ -1,38 +1,45 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;}
 
-:root{ 
-   /* CORES PRINCIPAIS*/
-    --cor-primaria: #1a1a2e;         /* Fundo escuro */
-    --cor-secundaria: #16213e;        /* Azul escuro */
-    --cor-destaque: #e94560;          /* Vermelho para destaque */
-    --cor-roxo: #6c3cb0;              /* Roxo */
-    
+:root {
+    /* CORES PRINCIPAIS*/
+    --cor-primaria: #1a1a2e;
+    /* Fundo escuro */
+    --cor-secundaria: #16213e;
+    /* Azul escuro */
+    --cor-destaque: #e94560;
+    /* Vermelho para destaque */
+    --cor-roxo: #6c3cb0;
+    /* Roxo */
+
     /* CORES DE FUNDO */
-    --cor-fundo: #f8f9fa;             /* Fundo claro */
-    --cor-fundo-escuro: #1a1a2e;      /* Fundo escuro */
-    
+    --cor-fundo: #f8f9fa;
+    /* Fundo claro */
+    --cor-fundo-escuro: #1a1a2e;
+    /* Fundo escuro */
+
     /* CORES DE TEXTO */
-    --cor-texto: #2d3436;             /* Texto principal */
-    --cor-texto-claro: #636e72;       /* Texto secundário */
-    --cor-branca: #ffffff;            /* Branco */
-    
+    --cor-texto: #2d3436;
+    /* Texto principal */
+    --cor-texto-claro: #636e72;
+    /* Texto secundário */
+    --cor-branca: #ffffff;
+    /* Branco */
+
     /* SOMBRAS */
-    --sombra-padrao: 0 4px 6px rgba(0,0,0,0.1);
-    --sombra-forte: 0 10px 30px rgba(0,0,0,0.2);
-    
+    --sombra-padrao: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-forte: 0 10px 30px rgba(0, 0, 0, 0.2);
+
     /* GRADIENTES */
     --gradiente-primario: linear-gradient(135deg, #1a1a2e, #6c3cb0);
 }
 
-body{
-    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: var(--cor-branca);
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--cor-fundo-escuro);
     color: var(--cor-texto);
     line-height: 1.6;
     padding: 20px;
@@ -40,47 +47,100 @@ body{
     margin: 0 auto;
 }
 
-header{
-    background-color:  var(--cor-primaria);
-    text-align: center;
-    margin-bottom: 20px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(100, 100, 100, 0.3);
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
 }
 
-main{
+.glass-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    width: 90%;
+    max-width: 900px;
+    padding: 10px 20px;
+
+
+    position: fixed;
+    top: 20px;
+    Left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo  a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin:0%;
+    padding:0%;
+}
+
+.nav-links li a {
+    color: #020202;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--cor-roxo);
+}
+
+main {
     padding: 50px;
     border-radius: 50px;
     box-shadow: var(--sombra-padrao);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 300;
     letter-spacing: -0.5px;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-h2{
+h2 {
     font-size: 32px;
     margin-bottom: 15px;
 }
 
-h3{
+h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-p{
+p {
     color: var(--cor-texto);
     font-size: 18px;
     max-width: 800px;
 }
 
-.container-principal{
+.container-principal {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -89,7 +149,7 @@ p{
 
 
 
-.container-footer{
+.container-footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
@@ -104,14 +164,14 @@ a {
 }
 
 
-.container h1{
+.container h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: var(--cor-primaria);
     text-align: center;
 }
 
-section{
+section {
     margin-bottom: 30px;
     padding: 30px;
     background-color: var(--cor-branca);
@@ -119,7 +179,7 @@ section{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-section h2{
+section h2 {
     color: var(--cor-secundaria);
     margin-bottom: 15px;
     padding-bottom: 20px;
@@ -128,71 +188,44 @@ section h2{
     letter-spacing: 1px;
 }
 
-section img{
-    width:  150px;
+#perfil-foto{
+    width: 150px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
-    border: 5px solid var(--cor-primaria);
-    box-shadow:
-     - 3px 3px 10px rgba(0,0,0,0.15),
-     - 8px 8px 25px rgba(0,0,0,0.08);
-     display: block;
-     margin: 0 auto 20px;
-     transition: all 0.4s ease;
+    border-radius: 50%;
+
+    border: 3px solid var(--cor-branca);
+    margin: 20px auto;
+    transition: transform 0.3s ease
 }
 
-section img:hover{
-    transform: scale(1.05);
-    box-shadow:
-    - 5px 5px 20px rgba(108, 60, 176, 0.3),
-    - 10px 10px 40px rgba(108, 60, 176, 0.15);
+#perfil-foto:hover { transform: scale(1.05);
 }
 
-.tabela-habilidades{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    box-shadow: var(--sombra-padrao);
-    border-radius: 10px;
-    overflow-x: hidden;
-}
-
-.tabela-habilidades thead{
-   background: var(--gradiente-primario);
-   color: var(--cor-branca);
-}
-
-.tabela-habilidades th {
-    padding: 15px 20px;
-    text-align: left;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-size: 14px;
-}
-
-.tabela-habilidades td {
-    padding: 15px 20px;
-    border-bottom: 1px solid var(--cor-cinza-medio);
-    font-size: 15px;
-    transition: all 0.3s ease;
-}
-
-.tabela-habilidades tbody tr:hover {
-    background-color: var(--cor-cinza-medio);
-    transform:scale(1.01);
-}
-
-.habilidades{
+.container-cards{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
+.habilidade{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+    width: 200px;
+    min-height: 250px;
+    padding: 20px;
 
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    box-shadow: var(--sombra-padrao);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-
+.habilidades:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-forte);
+}

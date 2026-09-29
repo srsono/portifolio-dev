@@ -12,19 +12,25 @@
 <body>
     <header>
         <nav class="glass-nav" id="glassnv"> <!--menu de navegacao-->
-            <ul> <!--lista nao ordenada de links navegcao-->
+
+            <div class="logo">
+                <a href="#">Joabi</a>
+            </div>
+
+
+            <ul class="nav-links"> <!--lista nao ordenada de links navegcao-->
                 <li><a href="#sobre-mim">sobre mim</a></li>
                 <li><a href="#habilidades">habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section class="container-principal" id="container-principal"> <!-- seção principal -->
             <h2 id="sobre-mim">Olá, este é o meu portifólio</h2>
-            <img id="perfil-foto" src="imagens/perfilfoto.png" alt="Uma exposição de arte com quadros" />
-            <div class="container-ptincipal-overlay">
+            <div id="foto-perfil"><img id="perfil-foto" src="imagens/perfilfoto.png" alt="..." /></div>
+            <div class="container-principal-overlay">
                 <article>
                     <p>Olá! Meu nome é <strong>Joabi</strong></p>
 
@@ -49,48 +55,46 @@
             </div>
 
             <section class="habilidades" id="habilidades"> <!-- seção de habilidades -->
-                <aside>
+        
                     <h3>Habilidades</h3>
-                    <table class="tabela-habilidades">
-                        <thead>
-                            <tr>
-                                <th data-label="Tecnologia">Tecnologia</th>
-                                <th data-label="Nível">Nível</th>
-                                <th data-label="Descrição">Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Tecnologia">HTML/CSS</td>
-                                <td data-label="Nível">Intermediário</td>
-                                <td data-label="Descrição">Construção de páginas web responsivas</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Tecnologia">JavaScript</td>
-                                <td data-label="Nível">Intermediário</td>
-                                <td data-label="Descrição">Desenvolvimento de funcionalidades dinâmicas</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Tecnologia">Python</td>
-                                <td data-label="Nível">Intermediário</td>
-                                <td data-label="Descrição">Desenvolvimento de aplicações e automação</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Tecnologia">Linux</td>
-                                <td data-label="Nível">Básico</td>
-                                <td data-label="Descrição">Manuseio do sistema operacional e ferramentas de linha de
-                                    comando
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
 
-                </aside>
+                    <div class="container-cards">
+
+                        <div class="habilidade">
+                            <h4>HTML</h4>
+                            <p>programação de estrutura de páginas web</p>
+                            <span>intermediário</span>
+                        </div>
+
+                        <div class="habilidade">
+                            <h4>CSS</h4>
+                            <p>programação de estilos e layouts</p>
+                            <span>intermediário</span>
+                        </div>
+
+                        <div class="habilidade">
+                            <h4>JavaScript</h4>
+                           <p>programação de fucionalidades dinâmicas</p>
+                           <span>intermediário</span>
+                        </div>
+
+                        <div class="habilidade">
+                            <h4>Python</h4>
+                            <p>programação de scripts e automações</p>
+                            <span>básico</span>
+                        </div>
+
+                        <div class="habilidade">
+                            <h4>linux</h4>
+                            <p>manuseio do sistema operacional</p>
+                            <span>básico</span>
+                        </div>
+                    </div>
 
             </section>
 
             <section> <!-- seção de outros projetos -->
-                <h2 id="links">links e projetos</h2>
+                <h2 id="links de projetos">links e projetos</h2>
                 <article>
                     <ul>
                         <li>#</li>
