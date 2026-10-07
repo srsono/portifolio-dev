@@ -15,6 +15,21 @@
     --cor-roxo: #6c3cb0;
     /* Roxo */
 
+    --cor-larnja:#f26716ca;
+    /* Laranja */
+
+    --cor-azul:#003494c2;
+    /* Azul */
+
+    --cor-amarelo:#ffd000e2;
+    /* Amarelo */
+
+    --cor-azul-claro:#2b86f6d3;
+    /* Azul claro */
+
+    --cor-cinza:#5858589a;
+    /* Cinza */
+
     /* CORES DE FUNDO */
     --cor-fundo: #f8f9fa;
     /* Fundo claro */
@@ -188,8 +203,14 @@ section h2 {
     letter-spacing: 1px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 #perfil-foto{
-    width: 150px;
+    max-width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
@@ -204,28 +225,101 @@ section h2 {
 
 .container-cards{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
 }
 
 .habilidade{
+    /* Layout Interno */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
+    /* Tamanho */
     width: 200px;
     min-height: 250px;
     padding: 20px;
+    scroll-snap-align: start;
 
-    background-color: var(--cor-fundo);
+    /* Visual */
     border-radius: 10px;
     box-shadow: var(--sombra-padrao);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.habilidades:hover {
+.habilidade:hover {
     transform: translateY(-5px);
     box-shadow: var(--sombra-forte);
+}
+
+.habilidade h4{
+    font-size: 1.2em;
+    color: var(--cor-branca);
+    margin-bottom: 10px;
+}
+
+.habilidade p{
+    font-size: 0.9rem;
+    color: var(--cor-branca);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.habilidade span{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-fundo);
+}
+
+.habilidade:nth-child(1) {
+    background-color: var(--cor-larnja);
+}
+
+.habilidade:nth-child(2) {
+    background-color: var(--cor-azul);
+}
+
+.habilidade:nth-child(3) {
+    background-color: var(--cor-amarelo);
+}
+
+.habilidade:nth-child(4) {
+    background-color: var(--cor-azul-claro);
+}
+
+.habilidade:nth-child(5) {
+    background-color: var(--cor-cinza);
+}
+
+@media(max-width: 600px) {
+    .main {
+        padding: 20px;
+    }
+
+    .container-principal {
+        padding: 20px 10px;
+    }
+
+    .habilidade {
+        width: 100%;
+        min-height: auto;
+    }
+    
+    body {
+        padding: 10px;
+    }
+
+    #perfil-foto {
+        width: 100px;
+        height: 100px;
+    }
 }
