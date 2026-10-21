@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <nav class="glass-nav" id="glassnv"> <!--menu de navegacao-->
+        <!--menu de navegacao-->
+        <nav class="glass-nav" id="glassnv">
 
             <div class="logo">
                 <a href="#">Joabi</a>
             </div>
-
 
             <ul class="nav-links"> <!--lista nao ordenada de links navegcao-->
                 <li><a href="#sobre-mim">sobre mim</a></li>
@@ -27,134 +27,108 @@
     </header>
 
     <main>
-        <section class="container-principal" id="container-principal"> <!-- seção principal -->
-            <h2 id="sobre-mim">Olá, meu nome é Joabi</h2>
-            <div id="foto-perfil"><img id="perfil-foto" src="imagens/perfilfoto.png" alt="..." /></div>
-            <div class="container-principal-overlay">
-                <article>
+        <!-- Container grid -->
+        <div class="dashboard-container">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit<strong>Lorem Ipsum</strong>Quisque
-                        faucibus ex
-                        sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis</p>
-                    <p>Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
-                        egestas.</p>
+            <!-- Coluna Esquerda -->
+            <div class="coluna-esquerda">
+                <section class="coluna-sobre" id="coluna-sobre">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                        pellentesque
-                        sem placerat. In id cursus mi pretium tellus duis convallis.</p>
+                    <article>
+                    
+                        <h2 id="sobre-mim">Olá, meu nome é Joabi</h2>
+                        <div id="foto-perfil"><img id="perfil-foto" src="imagens/perfilfoto.png" alt="..." /></div>
+                    
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit<strong>Lorem Ipsum</strong>Quisque
+                            faucibus ex
+                            sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis</p>
+                        <p>Tempus leo eu aenean sed diam urna tempor. Pulvinar .</p>
+                        <p>Tempus leo eu aenean sed diam urna tempor. Pulvinar .
+                            Tempus leo eu aenean sed diam urna tempor. Pulvinar .
+                            Tempus leo eu aenean sed diam urna tempor</p>
+                    
+                    </article>
+                    </section>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean
-                        sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
+                <section class="contato" id="contato">
+                    <h3>Contato</h3>
+                    <p>tem um projeto em mente? entre em contato comigo!</p>
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/joabi-silva-2b0b1b1b1/" target="_blank"><img
+                                    src="imagens/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/joabisilva" target="_blank"><img src="imagens/github.png"
+                                    alt="GitHub"></a></li>
+                    </ul>
+                </section>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean
-                        sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
-                </article>
             </div>
 
-            <section class="habilidades" id="habilidades"> <!-- seção de habilidades -->
-        
+
+            <!-- Coluna Direita -->
+            <div class="coluna-direita">
+                <section class="coluna-skills" id="skills">
+
                     <h3>skills</h3>
 
                     <div class="container-cards">
 
-                        <div class="habilidade" style="--index: 0;">
+                        <div class="habilidade">
                             <h4 class="icon">HTML</h4>
                             <p>programação de estrutura de páginas web</p>
                             <span class="nivel">intermediário</span>
                         </div>
 
-                        <div class="habilidade" style="--index: 1;">
+                        <div class="habilidade">
                             <h4 class="icon">CSS</h4>
                             <p>programação de estilos e layouts</p>
                             <span class="nivel">intermediário</span>
                         </div>
 
-                        <div class="habilidade" style="--index: 2;">
+                        <div class="habilidade">
                             <h4 class="icon">JavaScript</h4>
-                           <p>programação de fucionalidades dinâmicas</p>
-                           <span class="nivel">intermediário</span>
+                            <p>programação de fucionalidades dinâmicas</p>
+                            <span class="nivel">intermediário</span>
                         </div>
 
-                        <div class="habilidade" style="--index: 3;">
+                        <div class="habilidade">
                             <h4 class="icon">Python</h4>
                             <p>programação de scripts e automações</p>
                             <span class="nivel">básico</span>
                         </div>
 
-                        <div class="habilidade" style="--index: 4;">
+                        <div class="habilidade">
                             <h4 class="icon">linux</h4>
                             <p>manuseio do sistema operacional</p>
                             <span class="nivel">básico</span>
                         </div>
                     </div>
 
-            </section>
+                </section>
 
-            <section> <!--seção de links-->
-                <h2 id="links de projetos">links e projetos</h2>
-                <article>
-                    <ul>
-                        <li>#</li>
-                        <li>#</li>
-                        <li>#</li>
-                        <li>#</li>
-                    </ul>
-                </article>
-            </section>
+                <section class="comentarios">
+                    <h3>Comentários</h3>
+                    <p>Deixe seu comentário sobre o meu trabalho!</p>
+                    <form action="#" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
 
-            <section class="interacao" id="interacao"> <!-- seção de conhecimento do usuário -->
-                <p> já conhece alguma das tecnologias que utilizo?</p>
-                <p><a href="quiz.html">Faça o quiz de conhecimento</a></p>
-            </section>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-        </section>
+                        <label for="comentario">Comentário:</label>
+                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
 
-        <section>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
 
-            <h2 id="links">Projetos</h2>
-            <ul>
-                <li><a href="#">Projeto 1</a></li>
-                <li><a href="#">Projeto 2</a></li>
-                <li><a href="#">Projeto 3</a></li>
-            </ul>
 
-        </section>
-
+        </div>
     </main>
 
-    <footer> <!-- rodapé com contatos e sugestão de ideias -->
-        <section class="container-footer" id="container">
-
-            <h3 id="contato">contato</h3>
-
-            <p>tem um projeto em mente, você pode me enviar um email ou ligar para meu número profissional.</p>
-
-            <ul>
-                <li><a href="mailto:seuemail@example.com">Email</a></li>
-                <li><a href="tel:+551112345678">Número de telefone</a></li>
-            </ul>
-
-            <p>tem alguma sugestão? deixe seu feedback. Ajudeme a melhorar sua experiência!</p>
-
-            <form action="" method="post">
-                <label for="mensagem">📱Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" cols="30" rows="8" required></textarea>
-
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">📧Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit" id="enviar">Enviar</button>
-                <p>&copy; todos os direitos reservados</p>
-            </form>
-
-        </section>
-
-
+    <footer> <!--rodapé -->
+        <p>&copy; 2024 Joabi. Todos os direitos reservados.</p>
     </footer>
 
 </body>
