@@ -10,77 +10,90 @@
 </head>
 
 <body>
-    <header>
-        <!--menu de navegacao-->
-        <nav class="glass-nav" id="glassnv">
-
-            <div class="logo">
-                <a href="#">Joabi</a>
-            </div>
-
-            <ul class="nav-links"> <!--lista nao ordenada de links navegcao-->
-                <li><a href="#sobre-mim">sobre mim</a></li>
-                <li><a href="#habilidades">habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <!-- Container grid -->
         <div class="dashboard-container">
-
-            <!-- Coluna Esquerda -->
+ 
             <div class="coluna-esquerda">
                 <section class="coluna-sobre" id="coluna-sobre">
 
                     <article>
-                    
+
                         <h2 id="sobre-mim">Olá, meu nome é Joabi</h2>
                         <div id="foto-perfil"><img id="perfil-foto" src="imagens/perfilfoto.png" alt="..." /></div>
-                    
+
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit<strong>Lorem Ipsum</strong>Quisque
                             faucibus ex
                             sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis</p>
                         <p>Tempus leo eu aenean sed diam urna tempor. Pulvinar .</p>
-                        <p>Tempus leo eu aenean sed diam urna tempor. Pulvinar .
-                            Tempus leo eu aenean sed diam urna tempor. Pulvinar .
-                            Tempus leo eu aenean sed diam urna tempor</p>
-                    
+                        <p>Tempus leo eu aenean sed diam urna tempor. Pulvinar .</p>
+
                     </article>
-                    </section>
+                </section>
 
                 <section class="contato" id="contato">
-                    <h3>Contato</h3>
-                    <p>tem um projeto em mente? entre em contato comigo!</p>
-                    <ul class="social-icons">
-                        <li><a href="https://www.linkedin.com/in/joabi-silva-2b0b1b1b1/" target="_blank"><img
-                                    src="imagens/linkedin.png" alt="LinkedIn"></a></li>
-                        <li><a href="https://github.com/joabisilva" target="_blank"><img src="imagens/github.png"
-                                    alt="GitHub"></a></li>
-                    </ul>
+                    <h3>Projetos</h3>
+                    <p>Que tal da uma olhada nos meus projetos!</p>
+
+                    <div class="icones-redes">
+                        <a href="https://github.com/srsono" target="_blank" class="link-redes" id="github-icon"><img
+                                src="imagens/github.webp" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/joabi-silva-2b0b1b1b1/" target="_blank" class="link-redes"
+                            id="linkedin-icon"><img src="imagens/174857.png" alt="LinkedIn"></a>
+                    </div>
                 </section>
 
             </div>
 
-
-            <!-- Coluna Direita -->
             <div class="coluna-direita">
+
+                <section class="comentarios" id="comentarios">
+                    <h3>Meus comentarios</h3>
+                    <p>Sozinho é difícil, mas possível!</p>
+
+                    <div class="container-feed">
+
+                        <div class="comentario-card " style="--index: 0;">
+                            <h4>grid</h4>
+                            <p>È facil quando você entende o conceito, Pense como uma tabela de excel é isso</p>
+                            <span class="data">Não exatamente...</span>
+                        </div>
+
+                        <div class="comentario-card " style="--index: 1;">
+                            <h4>flexbox</h4>
+                            <p>È acho que é mais difícil de entender no início, mas com prática fica mais fácil!</p>
+                            <span class="data">Divs com display: flex!</span>
+                        </div>
+
+                        <div class="comentario-card " style="--index: 3;">
+                            <h4>responsividade</h4>
+                            <p>È essencial para sites que funcionem bem em dispositivos, Essencial e obrigatório.</p>
+                            <span class="data">"Simples"</span>
+                        </div>
+
+                        <div class="comentario-card " style="--index: 4;">
+                            <h4>animações</h4>
+                            <p>Como são apenas comentarios usar keyframes pareceu mais adequado no meu ponto de vista!</p>
+                            <span class="data">Interessante na verdade</span>
+                        </div>
+
+                        <div class="comentario-card " style="--index: 5;">
+                            <h4>Só faça</h4>
+                            <p>Apesar de simples,Fazer isso sozinho sem ser apenas um copia e cola foi algo muito significativo!</p>
+                            <span class="data">Só faz e deu.</span>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="coluna-skills" id="skills">
 
-                    <h3>skills</h3>
+                    <h3>XP</h3>
 
                     <div class="container-cards">
 
                         <div class="habilidade">
-                            <h4 class="icon">HTML</h4>
-                            <p>programação de estrutura de páginas web</p>
-                            <span class="nivel">intermediário</span>
-                        </div>
-
-                        <div class="habilidade">
-                            <h4 class="icon">CSS</h4>
-                            <p>programação de estilos e layouts</p>
+                            <h4 class="icon">HTML/CSS</h4>
+                            <p>programação de estrutura e estilos de páginas web</p>
                             <span class="nivel">intermediário</span>
                         </div>
 
@@ -103,23 +116,6 @@
                         </div>
                     </div>
 
-                </section>
-
-                <section class="comentarios">
-                    <h3>Comentários</h3>
-                    <p>Deixe seu comentário sobre o meu trabalho!</p>
-                    <form action="#" method="post">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="comentario">Comentário:</label>
-                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
-
-                        <button type="submit">Enviar</button>
-                    </form>
                 </section>
             </div>
 
