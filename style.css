@@ -15,7 +15,7 @@
     --cor-branca-gelo: #f8f9fa;
     --cor-obsidian: #656565;
     --cor-cinza-trasparente: #252525f6;
-    --cor-cinza-escuro: #2a2a2a;
+    --cor-cinza-escuro: #232323;
     --cor-jet-black: #131313;        
 
     --sombra-padrao: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -169,9 +169,9 @@ p {
     background-color:f8f9fa;
     opacity: 0;
 
-    animation: aparecer-sair 24s ease-in-out infinite;
+    animation: aparecer-sair 20s ease-in-out infinite;
 
-    animation-delay: calc(var(--index) * 4s);
+    animation-delay: calc(var(--index) * 20s);
 }
 
 @keyframes aparecer-sair {
